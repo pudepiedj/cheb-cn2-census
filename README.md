@@ -74,7 +74,11 @@ This says that $n$ imitates a prime in the whole field of $p^2$ elements: raisin
 
 By contrast, the smallest term, $a(1) = 443372888629441 = 17\cdot 31\cdot 41\cdot 43\cdot 89\cdot 97\cdot 167\cdot 331$, satisfies $n \equiv 1 \pmod{p^2-1}$ at all eight primes. So it is of order 2 as well, and it is also the first term of A175531.
 
-**A note on the word "order".** "Order 2" refers to the field of $p^2$ elements, and Howe defines Carmichael numbers of every order $m$ using fields of $p^m$ elements. Chebyshev numbers form a single family, with no order attached. They sit between order 1 (ordinary Carmichael numbers) and order 2: every order-2 number is one, and every one is an ordinary Carmichael number.
+**A note on the word "order".** "Order 2" refers to the field of $p^2$ elements, and Howe defines Carmichael numbers of every order $m$ using fields of $p^m$ elements. The Chebyshev–Carmichael numbers form a single family, with no order attached. They sit between order 1 (ordinary Carmichael numbers) and order 2:
+- every Carmichael number of order 2 is a Chebyshev–Carmichael number;
+- every Chebyshev–Carmichael number is an ordinary Carmichael number, by definition.
+
+This is not true of Chebyshev pseudoprimes in general: A175530 also contains numbers that are not Carmichael numbers.
 
 **Why the order-2 numbers appear in this list.** A299799 is defined by the Chebyshev condition alone, so every term of A175531 is automatically a term of A299799. This census lists them all. In the table below each term is marked as order 2 (it is in both sequences) or Chebyshev only.
 
