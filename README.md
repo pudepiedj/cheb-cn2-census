@@ -15,13 +15,13 @@ This repository contains the programs, the run records, the proofs and the check
 
 **Status.** The computation is complete and every check passes ([certificate](docs/CN2_Cheb_Certificate_1e28.md)). The search uses the same engines and the same two coverage proofs that certified the order-2 census below $10^{28}$ ([carmichael-order2-census-2](https://github.com/pudepiedj/carmichael-order2-census-2)). Here they run with the Chebyshev modulus $(p^2-1)/2$ in place of $p^2-1$. An earlier census below $10^{25}$, with 26 terms, is certified separately ([certificate](docs/CN2_Cheb_Certificate_1e25.md)). Its terms are a(1)–a(26) here.
 
-**Not A175530.** The larger sequence [A175530](https://oeis.org/A175530) (Chebyshev pseudoprimes) also contains numbers that are not Carmichael numbers of any kind, such as $79397009999$, which is $\equiv -1$ modulo every $p \pm 1$. This census covers only those that are also ordinary Carmichael numbers, A299799 $=$ A175530 $\cap$ A002997.
+**Not A175530.** The larger sequence [A175530](https://oeis.org/A175530) (Chebyshev pseudoprimes) also contains numbers that are not Carmichael numbers of any kind, such as $79397009999$, which is $\equiv -1$ modulo every $p \pm 1$. This census covers only those that are also Carmichael numbers of order 1, A299799 $=$ A175530 $\cap$ A002997.
 
 ## What is a Chebyshev–Carmichael number?
 
 ### Fermat's test, and the numbers that fool it
 
-If $p$ is prime, then $a^p \equiv a \pmod p$ for every whole number $a$ (Fermat's little theorem). It is tempting to use this as a primality test, but some composite numbers pass it for every $a$. These are the **Carmichael numbers** (A002997), sometimes called Carmichael numbers of order 1. In this README "Carmichael number" on its own always means this ordinary kind. The much rarer Carmichael numbers of order 2 (below) are always named as such. The smallest is $561 = 3\cdot 11\cdot 17$. Korselt's criterion says exactly which numbers they are: a composite $n$ is a Carmichael number when it is squarefree and $p-1$ divides $n-1$ for every prime $p \mid n$.
+If $p$ is prime, then $a^p \equiv a \pmod p$ for every whole number $a$ (Fermat's little theorem). It is tempting to use this as a primality test, but some composite numbers pass it for every $a$. These are the **Carmichael numbers of order 1** (A002997), usually just called Carmichael numbers. The Carmichael numbers of order 2 (below) are a much rarer kind, so in this README each kind is always named by its order. The smallest is $561 = 3\cdot 11\cdot 17$. Korselt's criterion says exactly which numbers they are: a composite $n$ is a Carmichael number of order 1 when it is squarefree and $p-1$ divides $n-1$ for every prime $p \mid n$.
 
 ### The same test with Chebyshev polynomials
 
@@ -29,13 +29,13 @@ The **Chebyshev polynomials** are defined by $T_n(\cos\theta) = \cos n\theta$. E
 $$T_2 = 2x^2 - 1, \qquad T_3 = 4x^3 - 3x, \qquad T_5 = 16x^5 - 20x^3 + 5x, \ \dots$$
 They behave like powers: just as $(x^m)^n = x^{mn}$, so $T_m(T_n(x)) = T_{mn}(x)$. They also obey their own version of Fermat's theorem: **if $p$ is an odd prime, then $T_p(a) \equiv a \pmod p$ for every whole number $a$.** (For $p = 2$ it fails, since $T_2(0) = -1$.) For example, with $p = 3$, $T_3(a) = 4a^3 - 3a \equiv a^3 \equiv a \pmod 3$.
 
-A composite $n$ with $T_n(a) \equiv a \pmod n$ for every $a$ is a **Chebyshev pseudoprime** (A175530). A **Chebyshev–Carmichael number** (A299799) passes both tests for every $a$: it is an ordinary Carmichael number and a Chebyshev pseudoprime. Neither test can tell it from a prime.
+A composite $n$ with $T_n(a) \equiv a \pmod n$ for every $a$ is a **Chebyshev pseudoprime** (A175530). A **Chebyshev–Carmichael number** (A299799) passes both tests for every $a$: it is a Carmichael number of order 1 and a Chebyshev pseudoprime. Neither test can tell it from a prime.
 
 ### The rule that decides it
 
 For a squarefree $n$, the Chebyshev test holds exactly when every prime $p \mid n$ satisfies
 $$n \equiv \pm 1 \pmod{p-1} \quad\text{and}\quad n \equiv \pm 1 \pmod{p+1}.$$
-Being an ordinary Carmichael number as well forces the $+$ sign mod $p-1$. That leaves two cases for each prime:
+Being a Carmichael number of order 1 as well forces the $+$ sign mod $p-1$. That leaves two cases for each prime:
 
 | mod $p-1$ | mod $p+1$ | together |
 |---|---|---|
@@ -46,7 +46,7 @@ The modulus is $(p^2-1)/2$, not $p^2-1$, because $p-1$ and $p+1$ are consecutive
 $$n \text{ is a Chebyshev–Carmichael number} \iff n \text{ is odd and composite, and } n \equiv 1 \text{ or } p \pmod{\tfrac{p^2-1}{2}} \text{ for every prime } p \mid n.$$
 
 **Where the $\pm$ comes from.** Substitute $a = (u + u^{-1})/2$. Then $T_n(a) = (u^n + u^{-n})/2$, so Chebyshev's test only ever sees $u$ through $u + u^{-1}$, and it cannot tell $u$ from $1/u$. Modulo $p$, the numbers $u$ that arise are of two kinds:
-- ordinary residues mod $p$, a group of $p-1$ elements;
+- the non-zero residues mod $p$, a group of $p-1$ elements;
 - elements of "norm 1" in the field of $p^2$ elements, a group of $p+1$ elements.
 
 So the test asks only that $u^n = u$ or $u^n = u^{-1}$ in each of these groups. That is the $\pm 1$ mod $p-1$ and mod $p+1$.
@@ -69,7 +69,7 @@ The three conditions are nested, each stricter than the one before:
 
 | sequence | condition at every prime $p \mid n$ | in words |
 |---|---|---|
-| A002997, Carmichael numbers (order 1) | $n \equiv 1 \pmod{p-1}$ | passes Fermat's test for every base |
+| A002997, Carmichael numbers of order 1 | $n \equiv 1 \pmod{p-1}$ | passes Fermat's test for every base |
 | A299799, Chebyshev–Carmichael numbers | $n \equiv 1$ or $p \pmod{(p^2-1)/2}$ | passes Chebyshev's test as well |
 | A175531, Carmichael numbers of order 2 | $n \equiv 1$ or $p \pmod{p^2-1}$ | imitates a prime in the whole field of $p^2$ elements |
 
@@ -84,11 +84,11 @@ A Chebyshev-only term satisfies the first two rows and fails the third.
 
 By contrast, the smallest term, $a(1) = 443372888629441 = 17\cdot 31\cdot 41\cdot 43\cdot 89\cdot 97\cdot 167\cdot 331$, satisfies $n \equiv 1 \pmod{p^2-1}$ at all eight primes. So it is of order 2 as well, and it is also the first term of A175531.
 
-**A note on the word "order".** "Order 2" refers to the field of $p^2$ elements, and Howe defines Carmichael numbers of every order $m$ using fields of $p^m$ elements. The Chebyshev–Carmichael numbers form a single family, with no order attached. They sit between order 1 (ordinary Carmichael numbers) and order 2:
+**A note on the word "order".** "Order 2" refers to the field of $p^2$ elements, and Howe defines Carmichael numbers of every order $m$ using fields of $p^m$ elements. The Chebyshev–Carmichael numbers form a single family, with no order attached. They sit between the Carmichael numbers of order 1 and those of order 2:
 - every Carmichael number of order 2 is a Chebyshev–Carmichael number;
-- every Chebyshev–Carmichael number is an ordinary Carmichael number, by definition.
+- every Chebyshev–Carmichael number is a Carmichael number of order 1, by definition.
 
-**"Chebyshev only"**, in the tables here, means a Chebyshev–Carmichael number that is not of order 2. It is still an ordinary Carmichael number, because being halfway round $p^2-1$ moves $n$ by $\tfrac{p^2-1}{2} = (p-1)\cdot\tfrac{p+1}{2}$, a multiple of $p-1$, so $n \equiv 1 \pmod{p-1}$ still holds at every prime. So the Chebyshev-only terms below $10^{22}$ appear in complete tables of Carmichael numbers, such as Goutier's, but none is in A175531.
+**"Chebyshev only"**, in the tables here, means a Chebyshev–Carmichael number that is not of order 2. It is still a Carmichael number of order 1, because being halfway round $p^2-1$ moves $n$ by $\tfrac{p^2-1}{2} = (p-1)\cdot\tfrac{p+1}{2}$, a multiple of $p-1$, so $n \equiv 1 \pmod{p-1}$ still holds at every prime. So the Chebyshev-only terms below $10^{22}$ appear in complete tables of Carmichael numbers, such as Goutier's, but none is in A175531.
 
 **Why the order-2 numbers appear in this list.** A299799 is defined by the Chebyshev condition alone, so every term of A175531 is automatically a term of A299799. This census lists them all. In the table below each term is marked as order 2 (it is in both sequences) or Chebyshev only.
 
@@ -220,7 +220,7 @@ python3 cn2_results_table.py --dir results/cert_1e28 --oeis results/A299799_oeis
 
 `check_cheb_terms.py` factorises each term afresh by trial division and checks:
 - that the term is odd, composite and squarefree;
-- that it is an ordinary Carmichael number (Korselt's criterion);
+- that it is a Carmichael number of order 1 (Korselt's criterion);
 - the $(p^2-1)/2$ condition;
 - the $\pm 1$ criterion separately.
 
