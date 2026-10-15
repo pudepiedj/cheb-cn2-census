@@ -60,7 +60,7 @@ This says that $n$ imitates a prime in the whole field of $p^2$ elements: raisin
 | | Carmichael of order 2 (A175531) | Chebyshev–Carmichael (A299799) |
 |---|---|---|
 | condition at each prime $p \mid n$ | $n \equiv 1$ or $p \pmod{p^2-1}$ | $n \equiv 1$ or $p \pmod{(p^2-1)/2}$ |
-| in the commonest case, $n - 1$ must be divisible by | $(p-1)(p+1)$, the product | $\operatorname{lcm}(p-1,\thinspace p+1)$, half the product |
+| in the commonest case, $n - 1$ must be divisible by | $(p-1)(p+1)$, the product | $\mathrm{lcm}(p-1,\thinspace p+1)$, half the product |
 | imitates a prime for | powers $a^n$ in the whole field of $p^2$ elements | Chebyshev polynomials $T_n(a)$ |
 
 **So every Carmichael number of order 2 is a Chebyshev–Carmichael number, but not the other way round.** The difference is exactly one factor of 2 in the modulus. At some prime, a Chebyshev–Carmichael number that is not of order 2 sits exactly halfway round the larger modulus: $n \equiv 1 + \tfrac{p^2-1}{2}$ or $p + \tfrac{p^2-1}{2} \pmod{p^2-1}$.
