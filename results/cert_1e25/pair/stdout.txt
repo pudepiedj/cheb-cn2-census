@@ -1,0 +1,21 @@
+[60 s] shards 0+205/4096  pairs 2.594e+04
+[120 s] shards 0+327/4096  pairs 6.121e+04
+[181 s] shards 0+429/4096  pairs 1.023e+05
+[241 s] shards 0+589/4096  pairs 1.865e+05
+[301 s] shards 0+749/4096  pairs 2.978e+05
+[361 s] shards 0+972/4096  pairs 4.937e+05
+[422 s] shards 0+1286/4096  pairs 8.540e+05
+[482 s] shards 0+1734/4096  pairs 1.775e+06
+[542 s] shards 0+1904/4096  pairs 5.976e+06
+[603 s] shards 0+2054/4096  pairs 1.879e+09
+[663 s] shards 0+2278/4096  pairs 9.730e+09
+[723 s] shards 0+2508/4096  pairs 1.771e+10
+[783 s] shards 0+2738/4096  pairs 2.559e+10
+[844 s] shards 0+2942/4096  pairs 3.262e+10
+[904 s] shards 0+3131/4096  pairs 3.930e+10
+[964 s] shards 0+3319/4096  pairs 4.583e+10
+[1025 s] shards 0+3511/4096  pairs 5.237e+10
+[1085 s] shards 0+3701/4096  pairs 5.896e+10
+[1145 s] shards 0+3886/4096  pairs 6.542e+10
+[1205 s] shards 0+4080/4096  pairs 7.202e+10
+{"engine":"cn2pair","mode":2,"X":"10000000000000000000000000","T":7000,"QSTAR":5500000,"nprimes":379900,"nshards":4096,"count_only":0,"complete":true,"stopped":false,"drained":false,"shards_done_prior":0,"shards_done_now":4096,"pairs":72161815050,"skipped":333217,"classes":1113216242,"candidates":20243723115,"sieved":3711280969,"tests":16532442146,"passes":15035,"seconds":1210.232}

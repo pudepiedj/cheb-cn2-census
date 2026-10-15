@@ -1,0 +1,42 @@
+2026-10-13 13:15 capped session start; no deadline (`drain` to end gracefully, `stop` to end now)
+[cn2xc 13:16:55] elapsed     60s  shards done     18632  nodes 2.888e+09 (4.78e+07/s)  candidates 2.453e+09  hits 0  root 2/898
+[cn2xc 13:17:56] elapsed    121s  shards done     24426  nodes 6.107e+09 (5.33e+07/s)  candidates 4.888e+09  hits 0  root 2/898
+[cn2xc 13:18:56] elapsed    181s  shards done     34091  nodes 8.902e+09 (4.63e+07/s)  candidates 7.007e+09  hits 0  root 3/898
+[cn2xc 13:19:56] elapsed    241s  shards done     35785  nodes 1.238e+10 (5.76e+07/s)  candidates 9.638e+09  hits 0  root 3/898
+[cn2xc 13:20:57] elapsed    302s  shards done     38051  nodes 1.559e+10 (5.32e+07/s)  candidates 1.197e+10  hits 0  root 3/898
+[cn2xc 13:21:57] elapsed    362s  shards done     47501  nodes 1.890e+10 (5.49e+07/s)  candidates 1.411e+10  hits 0  root 4/898
+[cn2xc 13:22:57] elapsed    423s  shards done     48276  nodes 2.154e+10 (4.38e+07/s)  candidates 1.616e+10  hits 0  root 4/898
+[cn2xc 13:23:58] elapsed    483s  shards done     49424  nodes 2.490e+10 (5.56e+07/s)  candidates 1.870e+10  hits 0  root 4/898
+[cn2xc 13:24:58] elapsed    543s  shards done     50942  nodes 2.830e+10 (5.64e+07/s)  candidates 2.116e+10  hits 0  root 4/898
+[cn2xc 13:25:58] elapsed    604s  shards done     52149  nodes 3.139e+10 (5.12e+07/s)  candidates 2.324e+10  hits 0  root 4/898
+[cn2xc 13:26:59] elapsed    664s  shards done     68163  nodes 3.444e+10 (5.05e+07/s)  candidates 2.531e+10  hits 0  root 5/898
+[cn2xc 13:27:59] elapsed    724s  shards done     69113  nodes 3.784e+10 (5.62e+07/s)  candidates 2.789e+10  hits 0  root 5/898
+[cn2xc 13:29:00] elapsed    785s  shards done     70072  nodes 4.117e+10 (5.52e+07/s)  candidates 3.034e+10  hits 1  root 5/898
+[cn2xc 13:30:00] elapsed    845s  shards done     71201  nodes 4.427e+10 (5.13e+07/s)  candidates 3.250e+10  hits 1  root 5/898
+[cn2xc 13:31:00] elapsed    905s  shards done     80581  nodes 4.779e+10 (5.83e+07/s)  candidates 3.470e+10  hits 1  root 6/898
+[cn2xc 13:32:01] elapsed    966s  shards done     81294  nodes 5.091e+10 (5.18e+07/s)  candidates 3.700e+10  hits 1  root 6/898
+[cn2xc 13:33:01] elapsed   1026s  shards done     82229  nodes 5.428e+10 (5.55e+07/s)  candidates 3.939e+10  hits 2  root 6/898
+[cn2xc 13:34:02] elapsed   1087s  shards done     82656  nodes 5.753e+10 (5.36e+07/s)  candidates 4.151e+10  hits 2  root 6/898
+[cn2xc 13:35:03] elapsed   1148s  shards done     90769  nodes 6.107e+10 (5.84e+07/s)  candidates 4.388e+10  hits 2  root 7/898
+[cn2xc 13:36:03] elapsed   1208s  shards done     91731  nodes 6.407e+10 (4.95e+07/s)  candidates 4.605e+10  hits 2  root 7/898
+[cn2xc 13:37:04] elapsed   1269s  shards done     92137  nodes 6.771e+10 (6.01e+07/s)  candidates 4.846e+10  hits 2  root 7/898
+[cn2xc 13:38:04] elapsed   1329s  shards done     99513  nodes 7.056e+10 (4.72e+07/s)  candidates 5.042e+10  hits 2  root 8/898
+[cn2xc 13:39:04] elapsed   1390s  shards done     99816  nodes 7.374e+10 (5.26e+07/s)  candidates 5.256e+10  hits 2  root 8/898
+[cn2xc 13:40:05] elapsed   1450s  shards done    105407  nodes 7.757e+10 (6.35e+07/s)  candidates 5.495e+10  hits 2  root 9/898
+[cn2xc 13:41:05] elapsed   1510s  shards done    105813  nodes 8.019e+10 (4.34e+07/s)  candidates 5.678e+10  hits 2  root 9/898
+[cn2xc 13:42:05] elapsed   1571s  shards done    111431  nodes 8.437e+10 (6.93e+07/s)  candidates 5.942e+10  hits 2  root 10/898
+[cn2xc 13:43:06] elapsed   1631s  shards done    111773  nodes 8.714e+10 (4.57e+07/s)  candidates 6.129e+10  hits 2  root 10/898
+[cn2xc 13:44:06] elapsed   1692s  shards done    120114  nodes 8.985e+10 (4.50e+07/s)  candidates 6.303e+10  hits 2  root 11/898
+[cn2xc 13:45:07] elapsed   1752s  shards done    120314  nodes 9.341e+10 (5.89e+07/s)  candidates 6.540e+10  hits 3  root 11/898
+[cn2xc 13:46:07] elapsed   1812s  shards done    124587  nodes 9.682e+10 (5.64e+07/s)  candidates 6.757e+10  hits 3  root 12/898
+[cn2xc 13:47:07] elapsed   1873s  shards done    129056  nodes 1.006e+11 (6.31e+07/s)  candidates 6.999e+10  hits 3  root 13/898
+[cn2xc 13:48:08] elapsed   1933s  shards done    136934  nodes 1.040e+11 (5.57e+07/s)  candidates 7.210e+10  hits 3  root 15/898
+[cn2xc 13:49:08] elapsed   1993s  shards done    145449  nodes 1.076e+11 (5.91e+07/s)  candidates 7.428e+10  hits 3  root 17/898
+[cn2xc 13:50:09] elapsed   2054s  shards done    148900  nodes 1.110e+11 (5.70e+07/s)  candidates 7.641e+10  hits 3  root 18/898
+[cn2xc 13:51:09] elapsed   2114s  shards done    158261  nodes 1.145e+11 (5.76e+07/s)  candidates 7.850e+10  hits 3  root 21/898
+[cn2xc 13:52:09] elapsed   2174s  shards done    167641  nodes 1.180e+11 (5.91e+07/s)  candidates 8.060e+10  hits 3  root 25/898
+[cn2xc 13:53:10] elapsed   2235s  shards done    179452  nodes 1.213e+11 (5.42e+07/s)  candidates 8.252e+10  hits 3  root 32/898
+[cn2xc 13:54:10] elapsed   2295s  shards done    196660  nodes 1.249e+11 (6.01e+07/s)  candidates 8.450e+10  hits 3  root 51/898
+[cn2xc 13:55:10] elapsed   2356s  shards done    202669  nodes 1.287e+11 (6.17e+07/s)  candidates 8.626e+10  hits 3  root 224/898
+2026-10-13 13:55 capped session end: complete=True drained=False stopped=False search 0.66 h
+all requested phases complete -- run `verify`

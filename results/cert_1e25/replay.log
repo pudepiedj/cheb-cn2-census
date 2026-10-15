@@ -1,0 +1,5 @@
+[PASS] capped (uniform): 100 of 214,135 shards replayed alone on one thread; counters identical for 100  (20 s; sample holds 0.04% of the work)
+[PASS] capped (weighted): 30 of 214,135 shards replayed alone on one thread; counters identical for 30  (25 s; sample holds 0.32% of the work)
+[PASS] pair (uniform): 60 of 4,096 shards replayed alone on one thread; counters identical for 60  (127 s; sample holds 1.63% of the work)
+[PASS] tail (uniform): 30 of 154 shards replayed alone on one thread; counters identical for 30  (68 s; sample holds 19.52% of the work)
+ALL PASS

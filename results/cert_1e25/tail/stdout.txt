@@ -1,0 +1,8 @@
+[cn2tail] primes in (5500000, 271441761]: 14404621   shards 154   total (p,a) pairs 4.1261e+10   setup 1.7s   prior shards done 0
+[cn2tail 13:10:49] elapsed     60s  shards done 0+0/154  tests 7.996e+09/4.126e+10 (19.38%, 1.33e+08/s)  survivors 15  ETA 0.07 h
+[cn2tail 13:11:49] elapsed    121s  shards done 0+30/154  tests 1.586e+10/4.126e+10 (38.45%, 1.32e+08/s)  survivors 26  ETA 0.05 h
+[cn2tail 13:12:49] elapsed    181s  shards done 0+60/154  tests 2.386e+10/4.126e+10 (57.83%, 1.32e+08/s)  survivors 43  ETA 0.04 h
+[cn2tail 13:13:50] elapsed    241s  shards done 0+90/154  tests 3.186e+10/4.126e+10 (77.21%, 1.32e+08/s)  survivors 61  ETA 0.02 h
+[cn2tail 13:14:50] elapsed    301s  shards done 0+120/154  tests 3.982e+10/4.126e+10 (96.51%, 1.32e+08/s)  survivors 78  ETA 0.00 h
+[cn2tail 13:15:50] elapsed    362s  shards done 0+153/154  tests 4.125e+10/4.126e+10 (99.97%, 1.14e+08/s)  survivors 91  ETA 0.00 h
+{"mode":2,"X":"10000000000000000000000000","R0":5500000,"T":271441761,"complete":true,"stopped":false,"drained":false,"threads":30,"shards":154,"shards_done":154,"shards_done_now":154,"total_pairs":"41260826516","tests":41260826516,"sieved":23743328978,"fermat_calls":17517497538,"fermat_passes":91,"setup_seconds":1.661,"search_seconds":365.649}
